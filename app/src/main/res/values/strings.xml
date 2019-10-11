@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">hamadcartoon</string>
-    <string name="browse_book">تصفح الكتاب</string>
+    <string name="browse_book">الكتب</string>
     <string name="about_artist">عن الفنان</string>
     <string name="rate_app">قيم التطبيق</string>
-
+    <string name="Developer">برمجة وتصميم هيثم الحداد</string>
 
 
     <string name="about_name">حمد جعفر محمد جاسم الغائب</string>

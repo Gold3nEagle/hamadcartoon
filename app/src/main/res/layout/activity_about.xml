@@ -16,7 +16,8 @@
             android:layout_width="fill_parent"
             android:layout_height="200dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/dp2"
+            android:paddingTop="20dp"
+            android:src="@drawable/dp"
 
             />
 
@@ -27,6 +28,7 @@
             android:layout_marginTop="50dp"
             android:text="@string/about_name"
             android:textAlignment="center"
+            android:fontFamily="@font/gess"
             android:textColor="@color/colorPrimaryDark"
             android:autoSizeTextType="uniform"
             android:textSize="33sp"
@@ -39,6 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:textSize="23sp"
+            android:fontFamily="@font/gess"
             android:autoSizeTextType="uniform"
             android:text="@string/about_list"
             android:textColor="@color/texts"
@@ -59,6 +62,7 @@
             android:text="@string/works_list"
             android:textColor="@color/texts"
             android:lineSpacingMultiplier="1.4"
+            android:fontFamily="@font/gess"
             android:layoutDirection="rtl"
             android:layout_marginTop="20dp"
             android:textSize="23sp"
@@ -77,6 +81,7 @@
             android:layoutDirection="rtl"
             android:layout_marginTop="20dp"
             android:textSize="23sp"
+            android:fontFamily="@font/gess"
             android:textColor="@color/texts"
             android:lineSpacingMultiplier="1.4"
             android:text="@string/achievement_list"
@@ -96,7 +101,7 @@
                 android:layout_height="60dp"
                 android:background="@null"
                 android:onClick="AccessFacebook"
-                android:paddingRight="10dp"
+                android:layout_marginRight="20dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/facebook" />
 
@@ -105,9 +110,9 @@
                 android:layout_height="60dp"
                 android:background="@null"
                 android:onClick="AccessTwitter"
+                android:layout_marginRight="20dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/twitter"
-                android:paddingRight="10dp"/>
+                android:src="@drawable/twitter" />
 
             <ImageButton
                 android:layout_width="60dp"

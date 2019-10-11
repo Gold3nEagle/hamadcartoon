@@ -22,12 +22,6 @@ public class AboutActivity extends Activity {
         workslisttxt = findViewById(R.id.Works_List);
         achievementlisttxt = findViewById(R.id.Achievement_List);
 
-        Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/gess.otf");
-        aboutlisttxt.setTypeface(typeface);
-        aboutnametxt.setTypeface(typeface);
-        workslisttxt.setTypeface(typeface);
-        achievementlisttxt.setTypeface(typeface);
-
     }
 
     public void AccessFacebook(View view){
@@ -38,11 +32,9 @@ public class AboutActivity extends Activity {
 
     public void AccessInstagram(View view){
 
-        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/hamad.algayeb")));
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/hamadcartoon")));
 
     }
-
-
 
     public void AccessTwitter(View view){
 

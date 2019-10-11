@@ -24,16 +24,13 @@ public class MainActivity extends Activity {
         aboutArtistbtn = findViewById(R.id.About_Artist);
         rateAppbtn = findViewById(R.id.Rate_App);
 
-        Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/gess.otf");
-        browseBookbtn.setTypeface(typeface);
-        aboutArtistbtn.setTypeface(typeface);
-        rateAppbtn.setTypeface(typeface);
-
-
     }
 
     public void BrowseBook(View view) {
         browseBookbtn.setBackgroundColor(getResources().getColor(R.color.colorButtonPressed));
+
+        Intent intent = new Intent(this, LibActivity.class);
+        startActivity(intent);
 
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
@@ -42,11 +39,9 @@ public class MainActivity extends Activity {
             }
         }, 100);
 
-        Intent viewPDF = new Intent(Intent.ACTION_VIEW);
-        viewPDF.setDataAndType(Uri.parse("https://drive.google.com/open?id=0Byio6GQV9piwTlRkNDctS19Dd0h6QzMtaVQtS0hrRzU2Sktn"), "text/html");
-        startActivity(viewPDF);
-
-
+        //Intent viewPDF = new Intent(Intent.ACTION_VIEW);
+       // viewPDF.setDataAndType(Uri.parse("https://drive.google.com/open?id=0Byio6GQV9piwTlRkNDctS19Dd0h6QzMtaVQtS0hrRzU2Sktn"), "text/html");
+       // startActivity(viewPDF);
     }
 
 
